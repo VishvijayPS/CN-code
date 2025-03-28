@@ -25,8 +25,7 @@ def xor(a, b):
 #sender side
 data = "100100001"
 divisor = "1101"
-appended_data = data + '0' * (
-len(divisor)- 1)
+appended_data = data + '0' * (len(divisor)- 1)
 checksum = crc(appended_data, divisor)
 print("Checksum at sender side:", checksum)
 
